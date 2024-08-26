@@ -1,0 +1,16 @@
+{
+    "name": "rashid/di-container",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "rashid"
+        }
+    ],
+    "require": {
+        "psr/container": "^2.0"
+    }
+}
