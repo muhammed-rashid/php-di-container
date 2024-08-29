@@ -8,6 +8,7 @@ class App{
     public function boot(){
         $this->concrete = new AppServiceProvider();
         $this->concrete->register(); 
+        Singleton::setInstance($this->concrete->app);
     }
 
 }
