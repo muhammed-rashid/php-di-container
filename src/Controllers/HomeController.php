@@ -1,12 +1,14 @@
 <?php
 namespace App\Controllers;
 
+use App\Facades\GatewayFacade;
+
 class HomeController
 {
    
     public function index()
     {
-        echo "Home Page";
+        echo GatewayFacade::pay(100);
     }
 
     public function hello()

@@ -16,5 +16,6 @@ class AppServiceProvider extends ServiceProvider
         $this->app->set(Router::class,function(){
             return new Router($this->app);
         });
+        $this->app->set('gateway',GatewayService::class);
     }
 }

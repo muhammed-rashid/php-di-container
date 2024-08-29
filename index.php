@@ -12,6 +12,7 @@ $kernal->boot();
 
 $router = $kernal->concrete->app->get(Router::class);
 
+
 $router->get('/',[HomeController::class,'index']);
 $router->get('hello',[HomeController::class,'hello']);
 $router->get('pay',[PaymentGatewayController::class,'pay']);
